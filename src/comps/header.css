@@ -1,0 +1,40 @@
+.icon_image {
+    width: 50px;
+    height: 50px;
+}
+
+.credit_img {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(21, 214, 201);
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.flex_display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#header_nav {
+    width: 100vw;
+    background-image: linear-gradient(to right, #e91414, #bf0224, #940628, #680e25, #3d101c, #3b212f, #372f39, #3b3b3b, #676767, #979797, #cacaca, #ffffff);
+
+}
+
+#page_div {
+    width: 20vw;
+}
+
+#credit_div {
+    width: 4vw;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+#page_div>p {
+    color: white;
+}

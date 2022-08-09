@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {useState,useEffect} from 'react';
+import ListDisplay from './comps/list';
+import Header_nav from './comps/header';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Particular_poke from './comps/display';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <BrowserRouter >
+    <Routes>
+      <Route exact path="/home"  element={<div><Header_nav /><ListDisplay /></div>}/>
+      <Route path="/details/:poke" element={<Particular_poke />}></Route>
+    </Routes>
+    </BrowserRouter>
     </div>
+
   );
 }
-
 export default App;
