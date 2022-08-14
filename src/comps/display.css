@@ -1,0 +1,27 @@
+#moves_div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#moves_div>p{
+    background-color: rgb(200, 0, 255);
+    width: auto;
+    padding: 2px 5px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 3px;
+    border-radius: 25px;
+    text-align: center;
+}
+#chart_div{
+    max-width: 50vw;
+    position: relative;
+    left: 20vw;
+
+}
+#image_div >img{
+    width: 10vw;
+    height: 15vh;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 20px;
+}
