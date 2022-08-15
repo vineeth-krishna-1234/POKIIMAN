@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import icon from "../images/icon.png";
 import Header_nav from "./header";
 import "./list.css";
+import {Link} from 'react-router-dom'
 
 function ListDisplay() {
   let axios = require("axios");
@@ -61,7 +62,7 @@ function ListDisplay() {
                 <div className="contentBx">
                   <h2>{obj.name.toUpperCase()}</h2>
                   <a href="#">Catch</a>
-                  <a href="#">Details</a>
+                  <a href="#"><Link to={`/details/${obj.name.toLowerCase()}`} id="details_page_link">Details</Link></a>
                 </div>
               </div>
             </div>

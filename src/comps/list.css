@@ -89,3 +89,10 @@
 .contentBx>h2 {
   color: aqua;
 }
+#details_page_link{
+  padding: 0%;
+  position: relative;
+  left: -10px;
+  width: 30px;
+  text-align: left;
+}

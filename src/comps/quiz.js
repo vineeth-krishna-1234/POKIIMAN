@@ -1,5 +1,6 @@
 import React from "react";
 import Header_nav from "./header";
+import ImageQuiz from "./imageQuiz";
 import './quiz.css'
 
 function QuizApp() {
@@ -7,7 +8,8 @@ function QuizApp() {
     <div>
       <Header_nav />
       <div>image quiz</div>
-      <img src="https://courses.cs.washington.edu/courses/cse154/webservices/pokedex/sprites/bulbasaur.png"  id="quiz_img"/>
+      <ImageQuiz />
+      
       <div>Name quiz</div>
 
     </div>
