@@ -6,6 +6,7 @@ import "./header.css";
 import {Link} from 'react-router-dom';
 
 function Header_nav() {
+  const [berry,setberry]=useState(localStorage.getItem('berry'))
   return (
     <div id="header_nav" className="flex_display">
       <div className="flex_display">
@@ -20,7 +21,7 @@ function Header_nav() {
       </div>
       <div id="credit_div" className="flex_display">
         <img src={credit} className="credit_img" />
-        <p>500</p>
+        <p>{berry}</p>
       </div>
     </div>
   );
