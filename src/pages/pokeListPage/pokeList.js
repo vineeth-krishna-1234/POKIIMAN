@@ -6,12 +6,11 @@ function PokeList() {
   const [pokeList, setPoke] = useState([]);
   useEffect(() => {
     axios.get("https://pokeapi.co/api/v2/pokemon/").then((result) => {
-      console.log(result);
       setPoke(result.data.results);
     });
   }, []);
   return (
-    <div className="flex flex-row flex-wrap justify-evenly">
+    <div className="flex flex-wrap justify-evenly">
       {pokeList.length && pokeList.map((pokeDetails) => <ItemCard pokeDetails={pokeDetails} />)}
     </div>
   );
